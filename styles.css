@@ -5,8 +5,8 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: darkslategrey
-  background-color: #d1eda4
+  color: #0B239D;
+  background-color: #FFFFFF; 
 }
 
 nav {
@@ -26,15 +26,15 @@ nav a {
   min-width: 9rem;
   padding: 0.5rem;
   border-radius: 0.2rem;
-  border: solid 1px #ffffff;
+  border: solid 1px #0B239D
   text-align: center;
   text-decoration: none;
   color: #ffffff;
 }
 
 nav a[aria-current='page'] {
-  color: hsl(0, 0%, 0%);
-  background-color: #d4d4d4;
+  color: #050517;
+  background-color: #1FA2FF;
 }
 
 main {
@@ -50,3 +50,22 @@ p{
   font-size: 1rem;
   word-spacing: 0.25rem;
 }
+.BottomOfThePage {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+#Box1 {
+padding: 1rem;
+background-color: #70C3FF;
+}
+
+#Box2 {
+padding: 1rem;
+background-color: #47B3FF;
+}
+
+#Box3 {
+padding: 1rem;
+background-color: #1FA2FF;
