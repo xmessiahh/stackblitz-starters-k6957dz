@@ -54,18 +54,24 @@ p{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+border-radius: 15px;
+padding: 2rem;
 }
 
 #Box1 {
 padding: 1rem;
 background-color: #70C3FF;
+border-radius: 15px;
 }
 
 #Box2 {
 padding: 1rem;
 background-color: #47B3FF;
+border-radius: 15px;
 }
 
 #Box3 {
 padding: 1rem;
 background-color: #1FA2FF;
+border-radius: 15px;
+}
