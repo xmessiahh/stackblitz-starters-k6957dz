@@ -4,15 +4,16 @@
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  color: #0B239D;
-  background-color: #FFFFFF; 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: darkslategrey
+  background-color: #d1eda4
 }
 
 nav {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction:column;
+  font-family:'Times New Roman', Times, serif;
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
@@ -25,20 +26,23 @@ nav a {
   display: inline-block;
   min-width: 9rem;
   padding: 0.5rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-radius: 0.2rem;
-  border: solid 1px #0B239D
+  border: solid 1px #ffffff;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
 }
 
 nav a[aria-current='page'] {
-  color: #050517;
-  background-color: #1FA2FF;
+  color: hsl(0, 0%, 0%);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #d4d4d4;
 }
 
 main {
   padding: 1rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
@@ -49,29 +53,4 @@ h1 {
 p{
   font-size: 1rem;
   word-spacing: 0.25rem;
-}
-.BottomOfThePage {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-border-radius: 15px;
-padding: 2rem;
-}
-
-#Box1 {
-padding: 1rem;
-background-color: #70C3FF;
-border-radius: 15px;
-}
-
-#Box2 {
-padding: 1rem;
-background-color: #47B3FF;
-border-radius: 15px;
-}
-
-#Box3 {
-padding: 1rem;
-background-color: #1FA2FF;
-border-radius: 15px;
 }
