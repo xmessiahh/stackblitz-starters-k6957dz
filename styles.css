@@ -28,7 +28,7 @@ nav a {
   padding: 0.5rem;
   border-radius: 0.2rem;
   font-family:'Times New Roman', Times, serif;
-  border: solid 1px #0B239D
+  border: solid 1px #0B239D;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
@@ -48,34 +48,24 @@ main {
 h1 {
   font-weight: bold;
   font-size: 2rem;
+  
 }
 
 p{
   font-size: 1rem;
   word-spacing: 0.25rem;
 }
-.BottomOfThePage {
+.FavoriteStores {
 display: flex;
-flex-direction: column;
+flex-direction: row;
 justify-content: space-between;
 border-radius: 15px;
 padding: 2rem;
 }
 
-#Box1 {
+.Store {
 padding: 1rem;
 background-color: #70C3FF;
 border-radius: 15px;
-}
-
-#Box2 {
-padding: 1rem;
-background-color: #47B3FF;
-border-radius: 15px;
-}
-
-#Box3 {
-padding: 1rem;
-background-color: #1FA2FF;
-border-radius: 15px;
+border: medium solid black;
 }
