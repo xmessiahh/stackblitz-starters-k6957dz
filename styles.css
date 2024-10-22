@@ -28,11 +28,16 @@ nav a {
   padding: 0.5rem;
   border-radius: 0.2rem;
   font-family:'Times New Roman', Times, serif;
-  border: solid 1px #0B239D
+  border: solid 1px #0B239D;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
 }
+
+.map {
+display: flex;
+justify-content: center;
+} 
 
 nav a[aria-current='page'] {
   color: #050517;
@@ -62,20 +67,23 @@ border-radius: 15px;
 padding: 2rem;
 }
 
-#Storebox {
+#ViviantVintage {
 padding: 1rem;
 background-color: #70C3FF;
 border-radius: 15px;
+border: medium solid black;
 }
 
-#Storebox {
+#Goodwill {
 padding: 1rem;
 background-color: #47B3FF;
 border-radius: 15px;
+border: medium solid black;
 }
 
-#Storebox {
+#Foundstore {
 padding: 1rem;
 background-color: #1FA2FF;
 border-radius: 15px;
+border: medium solid black;
 }
