@@ -54,27 +54,27 @@ p{
   font-size: 1rem;
   word-spacing: 0.25rem;
 }
-.BottomOfThePage {
+.Stores {
 display: flex;
-flex-direction: column;
+flex-direction: row;
 justify-content: space-between;
 border-radius: 15px;
 padding: 2rem;
 }
 
-#Box1 {
+#Storebox {
 padding: 1rem;
 background-color: #70C3FF;
 border-radius: 15px;
 }
 
-#Box2 {
+#Storebox {
 padding: 1rem;
 background-color: #47B3FF;
 border-radius: 15px;
 }
 
-#Box3 {
+#Storebox {
 padding: 1rem;
 background-color: #1FA2FF;
 border-radius: 15px;
