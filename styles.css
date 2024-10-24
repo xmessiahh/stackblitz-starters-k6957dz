@@ -50,7 +50,9 @@ h1 {
   font-size: 2rem;
 }
 
-.heading
+.heading {
+text-align: center;
+}
 
 p{
   font-size: 1rem;
