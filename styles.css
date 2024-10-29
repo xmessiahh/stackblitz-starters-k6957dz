@@ -51,11 +51,24 @@ h1 {
   
 }
 
+.heading {
+text-align: center;
+}
+
+.heading2{
+text-align: center;
+}  
+
+.heading3{
+text-align: center;  
+}
+
 p{
   font-size: 1rem;
   word-spacing: 0.25rem;
 }
-.FavoriteStores {
+
+.Stores {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -68,4 +81,31 @@ padding: 1rem;
 background-color: #70C3FF;
 border-radius: 15px;
 border: medium solid black;
+}
+
+.map {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+}
+
+#Storebox {
+padding: 1rem;
+background-color: #70C3FF;
+border-radius: 15px;
+}
+
+#Storebox {
+padding: 1rem;
+background-color: #47B3FF;
+border-radius: 15px;
+}
+
+#Storebox {
+padding: 1rem;
+background-color: #1FA2FF;
+border-radius: 15px;
 }
