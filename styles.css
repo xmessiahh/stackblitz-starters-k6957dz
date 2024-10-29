@@ -58,6 +58,10 @@ text-align: center;
 text-align: center;
 }  
 
+.heading3{
+text-align: center;  
+}
+
 p{
   font-size: 1rem;
   word-spacing: 0.25rem;
@@ -76,7 +80,7 @@ padding: 2rem;
   margin-right: auto;
   align-items:center;
   justify-content: center;
-  width: 50%;
+  width: 100%;
 }
 
 #Storebox {
