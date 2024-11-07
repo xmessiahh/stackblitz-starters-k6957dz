@@ -109,3 +109,11 @@ background-color: #1FA2FF;
 border-radius: 15px;
 border: medium solid black;
 }
+
+.form{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+padding: 1rem;
+color: #1FA2FF;
+}
