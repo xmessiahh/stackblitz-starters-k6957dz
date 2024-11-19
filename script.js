@@ -10,9 +10,9 @@ dateBlock.innerText = todaysDate();
 const body = document.body;
 const d = new Date();
 if (d.getHours() > 20 || d.getHours() < 9 ){
-    body.style["backgroundColor"] = "green";
-    body.style["color"] = "darkgreen";
+    body.style["backgroundColor"] = "white";
+    body.style["color"] = "grey";
 } else {
-    body.style["backgroundColor"] = "darkgreen";
-    body.sty;e["color"] = "green";
+    body.style["backgroundColor"] = "grey";
+    body.sty;e["color"] = "whiteS";
 }       
