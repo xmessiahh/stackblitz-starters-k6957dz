@@ -61,6 +61,27 @@
   </script>
   
   <div id="dateBlock"></div>
+  <div>
+    <label>Dark mode
+        <input type="checkbox" onchange="toggleDarkMode()">
+    </label>
+    <script>
+       let isDarkMode = false;
+      const body= document.body
+
+      const toggleDarkMode = () => {
+          console.log("Using dark mode: " + isDarkMode);
+          isDarkMode = !isDarkMode
+        if (isDarkMode) {
+            body.style["backgroundColor"] = "black";
+            body.style["color"] = "white";
+        } else {
+            body.style["backgroundColor"] = "white";
+            body.style["color"] = "black";
+        }      
+      }
+    </script>  
+  
 
 
 

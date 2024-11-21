@@ -37,9 +37,34 @@
           </tr>
         <tbody>    
     </table>
-<div>Select a Store</div>
-    <select id="types>"
-    </select>  
+<div>Select a Store:
+    <select id="stores">
+     </select>
+</div>
+
+<script>
+    const storeNames = ["all", "Viviant Vintage", "Found Store", "Garment District"];
+    const select = document.getElementById("stores");
+    storeNames.forEach((type) => {
+      option = document.createElement("option");
+      option.value =  type;
+      option.text = type;
+      select.appendChild(option);
+    })   
+</script>
+<script>
+    const store = {
+      name: "Found Store",
+      price: "$$$$$",
+      Rating: "5 Stars",
+    ,
+      name: "Garment District",
+      price: "$$",
+      rating: "3.5 Stars",   
+      
+    }
+
+
 </body>
 
 <html>
