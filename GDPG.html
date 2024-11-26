@@ -30,11 +30,6 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Found Store</td>
-            <td>$$$$</td>
-            <td>4.5</td>
-          </tr>
         <tbody>    
     </table>
 <div>Select a Store:
@@ -53,18 +48,33 @@
     })   
 </script>
 <script>
-    const store = {
-      name: "Found Store",
+    const store = [
+      {name: "Found Store",
       price: "$$$$$",
-      Rating: "5 Stars",
-    ,
+      Rating: "4 Stars",
+},
       name: "Garment District",
       price: "$$",
       rating: "3.5 Stars",   
-      
-    }
+{
+      name: "Viviant Vintage",
+      price: "$$$$",
+      rating: "4.5",
+},     
+]
 
+    const writeTableRow = (table, store) => {
+      const newRow = table.insertRow();
 
+      newRow.innerHTML = `<tr id=${store.name}>
+             <td>${store.name}</td>
+             <td>${store.price}</td>
+             <td>${store.rating}</td>
+          </tr>`;
+        }
+      const tableBody = document.getElementsByTagName("tbody")[0];
+      writeTableRow(tableBody, store[1])        
+
+     </script>
 </body>
-
-<html>
+</html>
