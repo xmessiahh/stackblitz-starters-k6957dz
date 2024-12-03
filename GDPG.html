@@ -33,8 +33,7 @@
         <tbody>    
     </table>
 <div>Select a Store:
-    <select id="stores">
-     </select>
+    <select id="stores" onchange="makeTable()"></select>
 </div>
 
 <script>
@@ -51,12 +50,12 @@
     const store = [
       {name: "Found Store",
       price: "$$$$$",
-      Rating: "4 Stars",
-},
+      Rating: "4",
+}, {
       name: "Garment District",
       price: "$$",
-      rating: "3.5 Stars",   
-{
+      rating: "3.5",   
+}, {
       name: "Viviant Vintage",
       price: "$$$$",
       rating: "4.5",
@@ -72,8 +71,21 @@
              <td>${store.rating}</td>
           </tr>`;
         }
+
+    const makeTable = () => {
       const tableBody = document.getElementsByTagName("tbody")[0];
-      writeTableRow(tableBody, store[1])        
+      tableBody.innerHTML = "";
+      if (select.value == "all") {      
+      store.forEach((row) => {
+          writeTableRow(tableBody, row);
+      
+      })
+     } else {
+     const filtered = store.filter((r) => { r.type == select  
+
+}
+makeTable() 
+  
 
      </script>
 </body>
