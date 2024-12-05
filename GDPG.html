@@ -50,7 +50,7 @@
     const store = [
       {name: "Found Store",
       price: "$$$$$",
-      Rating: "4",
+      rating: "4",
 }, {
       name: "Garment District",
       price: "$$",
@@ -76,12 +76,16 @@
       const tableBody = document.getElementsByTagName("tbody")[0];
       tableBody.innerHTML = "";
       if (select.value == "all") {      
-      store.forEach((row) => {
-          writeTableRow(tableBody, row);
+      store.forEach((row) => { 
+        writeTableRow(tableBody, row);
       
       })
      } else {
-     const filtered = store.filter((r) => { r.type == select  
+     const filtered = store.filter((r) =>  r.name == select.value)
+     filtered.forEach((r) => writeTableRow(tableBody,r))
+     console.log(filtered)
+
+     };
 
 }
 makeTable() 
