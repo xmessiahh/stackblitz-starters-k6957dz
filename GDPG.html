@@ -20,6 +20,77 @@
     <main>
       <div class="heading2"><h1>Garment District</h1></div> 
     </main>
-</body>
 
-<html>
+    <table id="table">
+        <thead>
+          <tr>
+            <td><b>Store Name</b></td>
+            <td><b>Price</b></td>
+            <td><b>Stars</b></td>
+          </tr>
+        </thead>
+        <tbody>
+        <tbody>    
+    </table>
+<div>Select a Store:
+    <select id="stores" onchange="makeTable()"></select>
+</div>
+
+<script>
+    const storeNames = ["all", "Viviant Vintage", "Found Store", "Garment District"];
+    const select = document.getElementById("stores");
+    storeNames.forEach((type) => {
+      option = document.createElement("option");
+      option.value =  type;
+      option.text = type;
+      select.appendChild(option);
+    })   
+</script>
+<script>
+    const store = [
+      {name: "Found Store",
+      price: "$$$$$",
+      rating: "4",
+}, {
+      name: "Garment District",
+      price: "$$",
+      rating: "3.5",   
+}, {
+      name: "Viviant Vintage",
+      price: "$$$$",
+      rating: "4.5",
+},     
+]
+
+    const writeTableRow = (table, store) => {
+      const newRow = table.insertRow();
+
+      newRow.innerHTML = `<tr id=${store.name}>
+             <td>${store.name}</td>
+             <td>${store.price}</td>
+             <td>${store.rating}</td>
+          </tr>`;
+        }
+
+    const makeTable = () => {
+      const tableBody = document.getElementsByTagName("tbody")[0];
+      tableBody.innerHTML = "";
+      if (select.value == "all") {      
+      store.forEach((row) => { 
+        writeTableRow(tableBody, row);
+      
+      })
+     } else {
+     const filtered = store.filter((r) =>  r.name == select.value)
+     filtered.forEach((r) => writeTableRow(tableBody,r))
+     console.log(filtered)
+
+     };
+
+}
+makeTable() 
+  
+
+     </script>
+</body>
+</html>
