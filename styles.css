@@ -63,6 +63,16 @@ text-align: center;
 text-align: center;  
 }
 
+.heading4 {
+text-align: right;  
+}
+
+.prosandconslist {
+justify-content: end;
+text-align: right;
+float: right;
+}
+
 p{
   font-size: 1rem;
   word-spacing: 0.25rem;
