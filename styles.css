@@ -67,10 +67,15 @@ text-align: center;
 text-align: right;  
 }
 
+.heading5 {
+text-align: center;  
+}
+
 .prosandconslist {
 justify-content: end;
 text-align: right;
 float: right;
+font-size: 1.75rem;
 }
 
 p{
@@ -99,25 +104,31 @@ background-color: white
   width: 100%;
 }
 
+.homescreenimages{
+height: 500px;  
+}
+
+.Storebox {
+  padding: 1rem;
+  border-radius: 15px;
+  border: medium solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #Storebox1 {
-padding: 1rem;
+
 background-color: #70C3FF;
-border-radius: 15px;
-border: medium solid black;
+
 }
 
 #Storebox2 {
-padding: 1rem;
 background-color: #47B3FF;
-border-radius: 15px;
-border: medium solid black;
 }
 
 #Storebox3 {
-padding: 1rem;
 background-color: #1FA2FF;
-border-radius: 15px;
-border: medium solid black;
 }
 
 .form{
@@ -135,3 +146,25 @@ color: #1FA2FF;
 td{
 padding:1rem;  
 }
+
+
+.pageright{
+display: flex;
+flex-direction: row;
+font-size: 1.25rem;
+padding: 1rem;
+line-height: 2rem;
+
+}
+.vi1{
+border: 10px solid black;
+width: 30%;
+}
+
+.vi2{
+border: 10px solid black;
+width: 20%;
+height: 300px;
+margin-left: 1rem; 
+}
+
