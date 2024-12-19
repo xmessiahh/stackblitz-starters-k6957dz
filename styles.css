@@ -64,13 +64,19 @@ text-align: center;
 }
 
 .heading4 {
-text-align: right;  
+text-align: center;
+}
+
+.heading5 {
+text-align: right;
+font-size: 1.5rem;
 }
 
 .prosandconslist {
 justify-content: end;
 text-align: right;
 float: right;
+font-size: 1.5rem;
 }
 
 p{
@@ -136,7 +142,22 @@ td{
 padding:1rem;  
 }
 
-.Vi1{
-border: 5px solid black;
-margin-left: 2rem;
+.container {
+  text-align: left;
+}
+.main-image {
+  width: 375px;
+  height: auto;
+  border: 4px solid black;
+  margin-bottom: 20px;
+}
+.small-images {
+  display: flex;
+  justify-content: left; 
+  gap: 30px; 
+}
+.small-images img {
+  width: 250px;
+  height: auto; 
+  border: 4px solid black;
 }
