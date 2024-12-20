@@ -163,3 +163,19 @@ padding:1rem;
   width: 220px;
   border: 3px solid #1FA2FF;
 }
+
+.text-container {
+  max-width: 30%; /* Restrict the paragraph's width */
+  text-align: left; /* Align text within the paragraph */
+  margin-left: auto; /* Push the paragraph to the far right */
+  margin-top: -600px; /* Negative margin to move the paragraph upward */
+  height: 300px; /* Set height to match large image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the paragraph vertically */
+}
+
+.text-container p {
+  font-size: 18px; /* Adjust font size here */
+  line-height: 1.6; /* Ensure line spacing */
+}
