@@ -212,3 +212,83 @@ padding:1rem;
   color: white; 
   cursor: pointer;
 }
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+thead {
+  background-color: #007BFF;
+  color: white;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Dropdown Styling */
+select {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Form Styling */
+.form {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.form label {
+  display: block;
+  margin: 10px 0;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form input[type="checkbox"], .form input[type="radio"] {
+  width: auto;
+}
+
+.form input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #0056b3;
+}

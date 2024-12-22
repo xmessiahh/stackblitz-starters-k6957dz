@@ -23,103 +23,81 @@
     </main>
 
     <table id="table">
-        <thead>
-          <tr>
-            <td><b>Store Name</b></td>
-            <td><b>Price</b></td>
-            <td><b>Stars</b></td>
-          </tr>
-        </thead>
-        <tbody>
-        <tbody>    
-    </table>
-<div>Select a Store:
-    <select id="stores" onchange="makeTable()"></select>
-</div>
+      <thead>
+        <tr>
+          <td><b>Store Name</b></td>
+          <td><b>Price</b></td>
+          <td><b>Stars</b></td>
+        </tr>
+      </thead>
+      <tbody></tbody>    
+  </table>
+  <div>
+      <select id="stores" onchange="makeTable()"></select>
+  </div>
 
-<script>
-    const storeNames = ["all", "Viviant Vintage", "Found Store", "Garment District"];
-    const select = document.getElementById("stores");
-    storeNames.forEach((type) => {
-      option = document.createElement("option");
-      option.value =  type;
-      option.text = type;
-      select.appendChild(option);
-    })   
-</script>
-<script>
-    const store = [
-      {name: "Found Store",
-      price: "$$$$$",
-      rating: "4",
-}, {
-      name: "Garment District",
-      price: "$$",
-      rating: "3.5",   
-}, {
-      name: "Viviant Vintage",
-      price: "$$$$",
-      rating: "4.5",
-},     
-]
+  <form class="form">
+      <label>
+          Name: <input type="text" required>  
+      </label>
 
-    const writeTableRow = (table, store) => {
-      const newRow = table.insertRow();
+      <label>  
+          Email: <input type="email" name="email" id="email">
+      </label>
 
-      newRow.innerHTML = `<tr id=${store.name}>
-             <td>${store.name}</td>
-             <td>${store.price}</td>
-             <td>${store.rating}</td>
-          </tr>`;
-        }
+      <label>
+          Opt in for emails about new stores! <input type="checkbox"/>  
+      </label>  
 
-    const makeTable = () => {
-      const tableBody = document.getElementsByTagName("tbody")[0];
-      tableBody.innerHTML = "";
-      if (select.value == "all") {      
-      store.forEach((row) => { 
-        writeTableRow(tableBody, row);
-      
-      })
-     } else {
-     const filtered = store.filter((r) =>  r.name == select.value)
-     filtered.forEach((r) => writeTableRow(tableBody,r))
-     console.log(filtered)
+      <label>
+          Allow us to take your information illegally! <input type="radio">
+      </label>
 
-     };
+      <label>
+          Submission: <textarea rows="3"></textarea>  
+      </label>
+      <input type="submit" onclick="formsubmission()" />
+  </form>
 
-}
-makeTable() 
-  
+  <script>
+      const storeNames = ["all", "Viviant Vintage", "Found Store", "Garment District"];
+      const select = document.getElementById("stores");
+      storeNames.forEach((type) => {
+          const option = document.createElement("option");
+          option.value = type;
+          option.text = type;
+          select.appendChild(option);
+      });
 
-     </script>
-</body>
-</html>
+      const store = [
+          { name: "Found Store", price: "$$$$$", rating: "4" },
+          { name: "Garment District", price: "$$", rating: "3.5" },
+          { name: "Viviant Vintage", price: "$$$$", rating: "4.5" },
+      ];
 
-<form class="form">
-  <label>
-  Name: <input type="text" required>  
-  </label>
+      const writeTableRow = (table, store) => {
+          const newRow = table.insertRow();
+          newRow.innerHTML = `
+              <td>${store.name}</td>
+              <td>${store.price}</td>
+              <td>${store.rating}</td>
+          `;
+      };
 
-  <label>  
-  Email: <input type="email" name="email" id="email">
-  </label>
+      const makeTable = () => {
+          const tableBody = document.getElementsByTagName("tbody")[0];
+          tableBody.innerHTML = "";
+          if (select.value === "all") {
+              store.forEach((row) => writeTableRow(tableBody, row));
+          } else {
+              const filtered = store.filter((r) => r.name === select.value);
+              filtered.forEach((r) => writeTableRow(tableBody, r));
+          }
+      };
 
-  <label>
-  Opt in for emails about new stores! <input type="checkbox"/>  
-  </label>  
+      makeTable();
 
-  <label>
-  Allow us to take your information illegally! <input type="radio">
-  </label>
-
-  <label>
-  Submission: <textarea style="width:80%" rows:3 ></textarea>  
-  </label>
-  <input type="submit" style="width:20%" onclick="formsubmission()" />
-</form>
-<script>
- function formsubmission() {
-  alert(document.getElementById("doctext").textContent);
- } 
-</script>
+      function formsubmission() {
+          alert("Form submitted successfully!");
+      }
+  </script>
