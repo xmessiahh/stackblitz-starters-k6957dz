@@ -15,10 +15,11 @@
       <a href="/">Home</a>
       <a href="/FPG.html">Found Store</a>
       <a href="/VVPG.html">Viviant Vintage</a>
-      <a href="/GDPG.html"aria-current="page">Garment District</a>
+      <a href="/GDPG.html"aria-current="page">Contact Me</a>
+      <a href="contact-me.html">Garment District</a>
     </nav>
     <main>
-      <div class="heading2"><h1>Garment District</h1></div> 
+      <div class="heading"><h1>Contact Me</h1></div> 
     </main>
 
     <table id="table">
@@ -94,3 +95,31 @@ makeTable()
      </script>
 </body>
 </html>
+
+<form class="form">
+  <label>
+  Name: <input type="text" required>  
+  </label>
+
+  <label>  
+  Email: <input type="email" name="email" id="email">
+  </label>
+
+  <label>
+  Opt in for emails about new stores! <input type="checkbox"/>  
+  </label>  
+
+  <label>
+  Allow us to take your information illegally! <input type="radio">
+  </label>
+
+  <label>
+  Submission: <textarea style="width:80%" rows:3 ></textarea>  
+  </label>
+  <input type="submit" style="width:20%" onclick="formsubmission()" />
+</form>
+<script>
+ function formsubmission() {
+  alert(document.getElementById("doctext").textContent);
+ } 
+</script>
