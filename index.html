@@ -44,39 +44,7 @@
           <img src="Images/found.PNG">Found Store</div>
         </a>
     </div>
-  <form class="form">
-    <label>
-    Name: <input type="text" required>  
-    </label>
-
-    <label>  
-    Email: <input type="email" name="email" id="email">
-    </label>
-
-    <label>
-    Opt in for emails about new stores! <input type="checkbox"/>  
-    </label>  
-
-    <label>
-    Allow us to take your information illegally! <input type="radio">
-    </label>
-
-    <label>
-    Submission: <textarea style="width:80%" rows:3 ></textarea>  
-    </label>
-    <input type="submit" style="width:20%" onclick="formsubmission()" />
-  </form>
-  <script>
-   function formsubmission() {
-    alert(document.getElementById("doctext").textContent);
-   } 
-  </script>
   
-  <div id="dateBlock"></div>
-  <div>
-    <label>Dark mode
-        <input type="checkbox" onchange="toggleDarkMode()">
-    </label>
     <script>
        let isDarkMode = false;
       const body= document.body
@@ -93,11 +61,17 @@
         }      
       }
     </script>  
-  
-
-
-
-
     </main>
+    <div id="dateBlock"></div>
+    <script>
+        const todaysDate = () => {
+            let d = new Date();
+            return `Today's date is ${d.toDateString()} ${d.toLocaleTimeString()}`;
+        };
+        const dateBlock = document.getElementById("dateBlock");
+        dateBlock.innerText = todaysDate();
+    </script>
+  <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
   </body>
 </html>
